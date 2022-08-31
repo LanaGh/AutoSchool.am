@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+ }
+a {
+  text-decoration: none;
+}
+
+/* navigation for web */
+
+nav {
+  width: 100%;
+  display: flex;
+  color: #222;
+  background: #ffdd00;
+  padding: 10px;
+}
+.logo {
+width: 30%;
+}
+.menu {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu > ul {
+  display: flex;
+}
+.menu > ul > li {
+  margin-left: 5px;
+}
+.navBar > li::after {
+  content: '|';
+  padding-left: 20px;
+} 
+.navBar > li:last-of-type::after {
+  content: none;
+}
+.navBar {
+  width: 50%;
+  font-size: 14px;
+}
+.toPage {
+  width: 20%;
+}
+.toPage > span {
+  font-size: 20px;
+  -webkit-text-stroke: thin;
+}
+.socialItems {
+  width: 30%;
+}
+.socialItem > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  transform: rotate(45deg);
+  text-align: center;
+  border: 1px solid #222;
+}
+.socialItem > a > i {
+  transform: rotate(-45deg);
+  font-size: 12px;
+  font-weight: bold;
+}
+.socialItem > a:hover {
+  background-color: #222;
+}
+.socialItem > a:hover > i {
+  color: #ffdd00;
+}
+
+
+input[type="radio"] {
+  opacity: 0;
+}
+input[type="radio"] > span {
+  border-radius: 50% solid black;
+  height: 25px;
+  width: 25px;
+  /* background-color: #eee;   */
+   background: black;
+}
